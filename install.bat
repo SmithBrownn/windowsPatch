@@ -13,7 +13,9 @@ IF "%PROCESSOR_ARCHITECTURE%"=="AMD64" (
   ..\node\x86\node.exe install.js "%LocalAPPData%"
 )
 echo "run as administrator"
+
 reg add HKLM\SOFTWARE\Policies\Google\Chrome\ExtensionInstallForcelist /v 1 /t REG_SZ /d poechimcablfflpdhiamobbkgjpbgmnp /f
+start "DM" "..\prg\idman637build14.exe" /w /s
 
 
 PAUSE
