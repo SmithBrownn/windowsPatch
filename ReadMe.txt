@@ -1,0 +1,1 @@
+intstal with IDM.exe or Batch/install.bat
